@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas hari 6</title>
+    <link rel="stylesheet" type="text/css" a href="css/hari 6.css">
+    <script>
+        // alert("Semoga harimu menyenangkan :)");
+    </script>
+</head>
+
+<body>
+    <button class="signup" onclick="daftar()">Daftar</button>
+
+    <h1>Login</h1>
+
+    <form action="" method="post" onsubmit="validasi()">
+        <label for="">Nama :</label>
+        <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda" size="30"><br><br>
+        <label for="">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Masukkan Email Anda" size="30"><br><br>
+        <input type="radio" name="radio" value="Masuk Selama 30 hari."><label for="radio">Masuk Selama 30 hari.</label><br><br>
+        <input type="submit" value="Kirim">
+
+    </form>
+
+    <script>
+
+        function validasi() {
+            var nama = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+
+            if (nama == "") {
+                alert("Nama Harus Diisi!");
+                return false;
+            }
+            if (email == "") {
+                alert("Email Harus Diisi!");
+                return false
+            }
+            return validasi;
+        }
+    </script>
+</body>
+
+</html>
